@@ -1,11 +1,13 @@
 package example;
 
+
+import C19366191.LinasVisuals;
 import processing.core.*;
 
 // This is an example of a visual that renders the waveform
 public class WaveForm
 {
-    MyVisual mv;
+    LinasVisuals mv;
     float cy = 0;
 
     public WaveForm(MyVisual mv)
@@ -13,6 +15,8 @@ public class WaveForm
         this.mv = mv;
         cy = this.mv.height / 2;
     }
+
+    
 
     public void render()
     {
