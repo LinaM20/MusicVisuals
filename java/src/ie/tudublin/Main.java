@@ -1,9 +1,7 @@
 package ie.tudublin;
 
 import C19366191.LinasVisuals;
-import example.CubeVisual;
-import example.MyVisual;
-import example.RotatingAudioBands;
+
 
 public class Main
 {	
