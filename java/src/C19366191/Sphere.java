@@ -12,6 +12,8 @@ public class Sphere extends PApplet
     float angle = 0;
     float  insideSphere = 0;
     float boxSize;
+    
+    
 
     public Sphere(LinasVisuals lv)
     {
@@ -51,7 +53,12 @@ public class Sphere extends PApplet
 
         lv.popMatrix();
 
+       
+        
+
         angle += 0.01f; //rotates the sphere
+
+
         
     }
 

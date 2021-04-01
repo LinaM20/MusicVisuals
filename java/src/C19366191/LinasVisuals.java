@@ -9,6 +9,7 @@ public class LinasVisuals extends Visual
 {
     Wave wave;
     Sphere s;
+    Pryamid pyramid;
 
     public void settings()
     {
@@ -22,6 +23,8 @@ public class LinasVisuals extends Visual
 
         wave = new Wave(this);
         s = new Sphere(this);
+        pyramid = new Pryamid(this);
+
     }
 
 
@@ -31,6 +34,14 @@ public class LinasVisuals extends Visual
         {
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
+        }
+        if (key == '1')
+        {
+            s.render();
+        }
+        if (key == '2')
+        {
+            pyramid.draw();
         }
         
     }
@@ -58,6 +69,10 @@ public class LinasVisuals extends Visual
         if (key == '1')
         {
             s.render();
+        }
+        if (key == '2')
+        {
+            pyramid.draw();
         }
         
         
