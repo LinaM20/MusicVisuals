@@ -14,7 +14,7 @@ public class Wave extends PApplet
         cy = this.lv.height ;
     }
 
-        
+     
 
     
 

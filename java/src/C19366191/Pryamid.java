@@ -30,12 +30,13 @@ public class Pryamid extends PApplet {
     public void render() {
         lv.colorMode(PApplet.HSB);
 
-        // lv.calculateAverageAmplitude();
+        lv.calculateAverageAmplitude();
 
         lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 0, 255)
             , 255
-             , 255
+            , 255
         );
+
         lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         lv.translate(0, 0, -250);
 
@@ -77,6 +78,8 @@ public class Pryamid extends PApplet {
         lv.endShape();
 
         theta += 0.05f;
+
+        
 
     }
 
