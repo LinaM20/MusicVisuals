@@ -38,10 +38,16 @@ public class LinasVisuals extends Visual
         if (key == '1')
         {
             s.render();
+            
+            
+            
         }
         if (key == '2')
         {
-            pyramid.draw();
+            pyramid.render();
+            
+            
+            
         }
         
     }
@@ -69,10 +75,17 @@ public class LinasVisuals extends Visual
         if (key == '1')
         {
             s.render();
+            
+            
+            
         }
         if (key == '2')
         {
-            pyramid.draw();
+            
+            pyramid.render();
+            
+            
+            
         }
         
         

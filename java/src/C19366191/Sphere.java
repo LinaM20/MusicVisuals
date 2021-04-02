@@ -1,6 +1,6 @@
 package C19366191;
 
-import processing.core.PApplet;
+import processing.core.*;
 
 //import processing.core.*;
 //import ie.tudublin.Visual;
@@ -12,6 +12,10 @@ public class Sphere extends PApplet
     float angle = 0;
     float  insideSphere = 0;
     float boxSize;
+
+    float theta = 0;
+    float p;
+    float t = 0;
     
     
 
@@ -20,6 +24,8 @@ public class Sphere extends PApplet
         this.lv = lv;
         
     }
+
+   
 
     public void render()
     {
@@ -41,8 +47,40 @@ public class Sphere extends PApplet
 
         insideSphere = lerp(insideSphere, boxSize, 0.1f);    
 
+
+        p = 5 + (lv.getAmplitude() * 100);
+
+        t = lerp(t, p, 0.05f); 
         
         lv.pushMatrix();
+
+        lv.rotateX(theta);
+        lv.rotateY(theta);
+        lv.rotateZ(theta);
+        //lv.translate(0,0, 0);
+        //lv.noFill();
+
+        lv.strokeWeight(3);
+        
+        lv.beginShape();
+        lv.vertex(-t, -t, -t);
+        lv.vertex(t, -t, -t);
+        lv.vertex(   0,    0,  t);
+
+        lv.vertex(t, -t, -t);
+        lv.vertex( t,  t, -t);
+        lv.vertex(   0,    0, t);
+
+        lv.vertex( t, t, -t);
+        lv.vertex(-t, t, -t);
+        lv.vertex(   0,   0,  t);
+
+        lv.vertex(-t,  t, -t);
+        lv.vertex(-t, -t, -t);
+        lv.vertex(   0,    0,  t);
+        lv.endShape();
+
+        theta += 0.01f;
 
         lv.translate(0, 0, 0); //places sphere in the middle
         lv.rotateY(angle);
