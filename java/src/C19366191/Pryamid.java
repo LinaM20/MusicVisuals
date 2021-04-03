@@ -57,7 +57,7 @@ public class Pryamid extends PApplet {
         //lv.translate(0,0, 0);
         //lv.noFill();
 
-        lv.strokeWeight(3);
+        lv.strokeWeight(2);
         
         lv.beginShape();
         lv.vertex(-t, -t, -t);
