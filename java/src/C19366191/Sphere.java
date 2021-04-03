@@ -59,9 +59,10 @@ public class Sphere extends PApplet
         //lv.translate(0,0, 0);
         //lv.noFill();
 
-        lv.strokeWeight(3);
+        //lv.strokeWeight(3);
         
         lv.beginShape();
+       
         
         
         lv.vertex(-t, -t, -t);

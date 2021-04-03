@@ -13,7 +13,6 @@ public class Cube extends PApplet {
     float size;
     
 
-
     public Cube (LinasVisuals lv)
     {
         this.lv = lv;
@@ -22,7 +21,7 @@ public class Cube extends PApplet {
     
 
     public void render() {
-        lv.lights();
+        
         lv.colorMode(PApplet.HSB);
         lv.calculateAverageAmplitude();
 
