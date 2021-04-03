@@ -18,11 +18,11 @@ This assignment required me to create "something beautiful to enjoy while listen
 
 
 # Instructions
--To start the music, press the space key. This starts the music off and the visuals begin reacting. 
--Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
--If you press key 1, you should see a sphere.
--Press key 2 to 
--Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
+- To start the music, press the space key. This starts the music off and the visuals begin reacting. 
+- Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
+- If you press key 1, you should see a sphere.
+- Press key 2 to 
+- Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
 
 # How it works
 
