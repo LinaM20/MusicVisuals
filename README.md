@@ -4,16 +4,8 @@ Name: Lina Mir
 
 Student Number: C19366191
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
-
 # Description of the assignment
 This assignment required me to create "something beautiful to enjoy while listening to music." I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
-
 
 
 
@@ -25,6 +17,7 @@ This assignment required me to create "something beautiful to enjoy while listen
 - Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
 
 # How it works
+I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch.
 
 # What I am most proud of in the assignment
 
