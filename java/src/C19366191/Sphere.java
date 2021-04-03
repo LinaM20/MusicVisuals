@@ -29,6 +29,8 @@ public class Sphere extends PApplet
 
     public void render()
     {
+
+        
         lv.colorMode(PApplet.HSB);
 
         lv.calculateAverageAmplitude();

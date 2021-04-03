@@ -7,7 +7,7 @@ import ie.tudublin.VisualException;
 
 public class LinasVisuals extends Visual
 {
-    //Wave wave;
+    Wave wave;
     Sphere s;
     Pryamid pyramid;
     Cube cube;
@@ -15,15 +15,19 @@ public class LinasVisuals extends Visual
     public void settings()
     {
         size(1024, 600, P3D);
+        
     }
     
     public void setup()
     {
         startMinim();
-        loadAudio("Punjabi.mp3");
+        //loadAudio("Punjabi.mp3");
         //loadAudio("Dharma.mp3");
+        loadAudio("DontYouWorryChild.mp3");
+        //loadAudio("FeelSoClose.mp3");
 
-        //wave = new Wave(this);
+
+        wave = new Wave(this);
         s = new Sphere(this);
         pyramid = new Pryamid(this);
         cube = new Cube(this);
@@ -38,21 +42,7 @@ public class LinasVisuals extends Visual
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
         }
-        if (key == '1')
-        {
-            s.render();
-        
-        }
-        if (key == '2')
-        {
-            pyramid.render();
-            
-        }
-        if (key == '3')
-        {
-            cube.render();
-        }
-        
+     
     }
 
     
@@ -78,7 +68,7 @@ public class LinasVisuals extends Visual
         if (key == '1')
         {
             s.render();
-      
+     
         }
         if (key == '2')
         {
@@ -89,6 +79,7 @@ public class LinasVisuals extends Visual
         if (key == '3')
         {
             cube.render();
+             wave.render();
         }
         
   

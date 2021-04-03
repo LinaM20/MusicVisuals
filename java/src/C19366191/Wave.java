@@ -1,9 +1,8 @@
 package C19366191;
 
-import processing.core.PApplet;
+import processing.core.*;
 
-// This is an example of a visual that renders the waveform
-public class Wave extends PApplet
+public class Wave
 {
     LinasVisuals lv;
     float cy = 0;
@@ -11,22 +10,24 @@ public class Wave extends PApplet
     public Wave(LinasVisuals lv)
     {
         this.lv = lv;
-        cy = this.lv.height ;
+        cy = this.lv.width / 2;
     }
-
-     
-
-    
 
     public void render()
     {
-        lv.colorMode(PApplet.HSB);
-        for(int i = 0 ; i < lv.getAudioBuffer().size() ; i++)
-        {
-            lv.stroke(PApplet.map(i, 0, lv.getAudioBuffer().size(), 0, 255), 255, 255);
+        lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
+        lv.translate(-75, 0, -100);
 
-            lv.line(i, cy, i, cy * lv.getAudioBuffer().get(i));
-            lv.line(i, cy, i, cy + cy * lv.getAudioBuffer().get(i));
+
+        lv.colorMode(PApplet.HSB);
+        for(int i = 0 ; i < 200; i ++)
+        {
+            lv.stroke(
+                PApplet.map(i, 0, 200, 0, 255)
+                , 255
+                , 255
+            );
+            lv.line(-25 + i , 0, -25 + i,  30 * lv.getAudioBuffer().get(i));
         }
     }
 }

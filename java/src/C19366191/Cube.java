@@ -27,13 +27,13 @@ public class Cube extends PApplet {
         lv.calculateAverageAmplitude();
 
         lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 0, 255)
-            , 200
+            , 255
             , 255
         );
 
         lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         lv.translate(0, 0, -250);
-
+        lv.strokeWeight(2);
         
         lv.rotateX(angle);
         lv.rotateY(angle);
@@ -44,7 +44,7 @@ public class Cube extends PApplet {
         lv.box(10 + lv.getSmoothedAmplitude() * boxSize);
         
 
-        angle += 0.05f;
+        angle += 0.0255f;
 
     }
     
