@@ -5,7 +5,10 @@ Name: Lina Mir
 Student Number: C19366191
 
 # Description of the assignment
-This assignment required me to create "something beautiful to enjoy while listening to music." I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
+This assignment required me to create "something beautiful to enjoy while listening to music." 
+
+I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
+The song I used were a few different songs esspecially to test the different wavelengths.
 
 
 
