@@ -12,8 +12,17 @@ Student Number: C19366191
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
+This assignment required me to create "something beautiful to enjoy while listening to music." I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
+
+
+
 
 # Instructions
+-To start the music, press the space key. This starts the music off and the visuals begin reacting. 
+-Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
+-If you press key 1, you should see a sphere.
+-Press key 2 to 
+-Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
 
 # How it works
 
