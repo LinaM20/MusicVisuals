@@ -12,6 +12,7 @@ The song I used were a few different songs esspecially to test the different wav
 
 
 
+
 # Instructions
 - To start the music, press the space key. This starts the music off and the visuals begin reacting. 
 - Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
@@ -21,6 +22,8 @@ The song I used were a few different songs esspecially to test the different wav
 
 # How it works
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch.
+
+The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
 
 # What I am most proud of in the assignment
 
