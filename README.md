@@ -37,7 +37,7 @@ When key 3 is pressed, a cube and a waveform appear. The cube moves according to
 # What I am most proud of in the assignment
 
 # Images
-
+Key 3: Cube and Waveform
 ![Key 3: Cube and waveform](images/cube.png)
 
 
