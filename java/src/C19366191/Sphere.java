@@ -24,6 +24,11 @@ public class Sphere extends PApplet
         this.lv = lv;
         
     }
+    public void settings()
+    {
+        size(1024, 600, P3D);
+        //fullScreen();
+    }
 
    
 

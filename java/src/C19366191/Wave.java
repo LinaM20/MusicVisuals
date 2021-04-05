@@ -13,6 +13,11 @@ public class Wave extends PApplet
         this.lv = lv;
         cy = this.lv.height ;
     }
+    public void settings()
+    {
+        size(1024, 600, P3D);
+        //fullScreen();
+    }
 
      
 

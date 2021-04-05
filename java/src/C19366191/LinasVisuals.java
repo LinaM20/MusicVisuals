@@ -14,8 +14,8 @@ public class LinasVisuals extends Visual
 
     public void settings()
     {
-        size(1024, 600, P3D);
-        //fullScreen();
+        
+        fullScreen();
     }
     
     public void setup()
@@ -26,7 +26,7 @@ public class LinasVisuals extends Visual
         
 
         //wave = new Wave(this);
-        circle = new Circle(this, width/2, height/2, width/10, 500f);
+        circle = new Circle(this);
         s = new Sphere(this);
         pyramid = new Pryamid(this);
 
@@ -44,22 +44,22 @@ public class LinasVisuals extends Visual
                 getAudioPlayer().play();
             }
         }
-        switch(key)
-        {
-            case '1':
-                circle.render();
-                break;
+        // switch(key)
+        // {
+        //     case '1':
+        //         circle.render();
+        //         break;
             
-            case '2':
-                s.render();
-                break;
+        //     case '2':
+        //         s.render();
+        //         break;
 
-            case '3':
-                pyramid.render();
-                break;
+        //     case '3':
+        //         pyramid.render();
+        //         break;
 
             
-        }
+        // }
         // if (key == '1')
         // {
         //     s.render();
@@ -104,44 +104,29 @@ public class LinasVisuals extends Visual
         // Call this is you want to get the average amplitude
         calculateFrequencyBands();
     
-        switch(key)
+        
+        if (key == '1')
         {
-            case '1':
-                circle.render();
-                break;
+            circle.draw();
+           //wave.render();
             
-            case '2':
-                s.render();
-                break;
-
-            case '3':
-                pyramid.render();
-                break;
-
+            
             
         }
-        // if (key == '1')
-        // {
-        //     s.render();
-        //    //wave.render();
+        if (key == '2')
+        {
             
-            
-            
-        // }
-        // if (key == '2')
-        // {
-            
-        //     pyramid.render();
+            pyramid.render();
            
             
             
             
-        // }
-        // if (key == '3')
-        // {
+        }
+        if (key == '3')
+        {
             
-        //     circle.render();
-        // }
+            s.render();
+        }
         
         
         

@@ -15,6 +15,8 @@ public class Pryamid extends PApplet {
     float t = 0;
     //float cy = 0;
 
+   
+    
     
 
     public Pryamid(LinasVisuals lv)
