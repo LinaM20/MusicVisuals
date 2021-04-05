@@ -30,26 +30,65 @@ I created a few branches to work on different things and then when I was satisfi
 
 The main file that calls all the other files is called LinasVisuals.java. The way it works is like this:
 Variables are created for the files so they can be easily accessed.
-'''Java
+```Java
 public class LinasVisuals extends Visual
 {
-    Wave wave;
-    Sphere sphere;
-    Pryamid pyramid;
-    Cube cube;
-    Circle circle;
+	Wave wave;
+	Sphere sphere;
+	Pryamid pyramid;
+	Cube cube;
+	Circle circle;
 ....
 }
-'''
+```
 
-Next, 
-'''Java
+Next, in the setup method, the files are called:
+```Java
 public void setup()
 { 
+	.....
+	
+	wave = new Wave(this);
+        sphere = new Sphere(this);
+        pyramid = new Pryamid(this);
+        cube = new Cube(this);
+        circle = new Circle(this);
+}
 
-'''
+```
 
+Then finally in the draw method, the variable and the method used to created the shapes are called:
+```Java
+public void draw()
+{ 
+	...
+	
+ 	if (key == '1')
+        {
+            sphere.render();
+            
+     
+        }
+        if (key == '2')
+        {
+            
+            //pyramid.render();
+            circle.render();
+            
+           
+                
+        }
+        if (key == '3')
+        {
+            cube.render();
+            wave.render();
+        }
+	
+}
 
+```
+
+## Keys
 Pressing key 1 will produce a sphere and another sphere inside it. They both react to the music. One sphere is larger than the other and changes size much more than the inside sphere as it is larger. The inner sphere colour is more blue/purple and this was to style it differently to the larger sphere so that it can be seen more clearly. Both the larger sphere and the inner sphere change colour depending on the amplitude the music reaches.
 
 Key 2 is pressed and many circles will appear. they decrease is size and this effect forms a vortex. They circles all change depending on the amplitude and increase in size too. The circles start of being red but as the music picks up, the colour of the circles change. 
@@ -86,31 +125,7 @@ This is a [hyperlink](http://bryanduggan.org)
 #### Headings
 ##### Headings
 
-This is code:
 
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
 
 
 
