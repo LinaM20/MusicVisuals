@@ -8,9 +8,10 @@ import ie.tudublin.VisualException;
 public class LinasVisuals extends Visual
 {
     Wave wave;
-    Sphere s;
+    Sphere sphere;
     Pryamid pyramid;
     Cube cube;
+    Circle circle;
 
     public void settings()
     {
@@ -21,16 +22,17 @@ public class LinasVisuals extends Visual
     public void setup()
     {
         startMinim();
-        //loadAudio("Punjabi.mp3");
-        loadAudio("Dharma.mp3");
+        loadAudio("Punjabi.mp3");
+        //loadAudio("Dharma.mp3");
         //loadAudio("FeelSoClose.mp3");
        
 
 
         wave = new Wave(this);
-        s = new Sphere(this);
+        sphere = new Sphere(this);
         pyramid = new Pryamid(this);
         cube = new Cube(this);
+        circle = new Circle(this);
 
     }
 
@@ -74,13 +76,16 @@ public class LinasVisuals extends Visual
         
         if (key == '1')
         {
-            s.render();
+            sphere.render();
+            
      
         }
         if (key == '2')
         {
             
-            pyramid.render();
+            //pyramid.render();
+            circle.render();
+            
            
                 
         }
