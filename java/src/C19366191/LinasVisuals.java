@@ -22,9 +22,9 @@ public class LinasVisuals extends Visual
     {
         startMinim();
         //loadAudio("Punjabi.mp3");
-        //loadAudio("Dharma.mp3");
-        loadAudio("DontYouWorryChild.mp3");
+        loadAudio("Dharma.mp3");
         //loadAudio("FeelSoClose.mp3");
+       
 
 
         wave = new Wave(this);
@@ -39,9 +39,16 @@ public class LinasVisuals extends Visual
     {
         if (key == ' ')
         {
-            getAudioPlayer().cue(0);
-            getAudioPlayer().play();
+            if (getAudioPlayer().isPlaying()) 
+            {
+                getAudioPlayer().pause();
+            } else
+            {
+                getAudioPlayer().play();
+            }           
+            
         }
+        
      
     }
 
@@ -64,7 +71,7 @@ public class LinasVisuals extends Visual
 
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude(); 
-    
+        
         if (key == '1')
         {
             s.render();
@@ -74,12 +81,13 @@ public class LinasVisuals extends Visual
         {
             
             pyramid.render();
+           
                 
         }
         if (key == '3')
         {
             cube.render();
-             wave.render();
+            wave.render();
         }
         
   

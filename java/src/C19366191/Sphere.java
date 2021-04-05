@@ -10,7 +10,8 @@ public class Sphere extends PApplet
 {   
     LinasVisuals lv;
     float angle = 0;
-    float  insideSphere = 0;
+    float largerSphere = 0;
+    float smallerSphere = 0;
     float boxSize;
 
     float theta = 0;
@@ -47,7 +48,10 @@ public class Sphere extends PApplet
         
         //Makes the sphere spin
         boxSize = 10 + (lv.getAmplitude() * 500);
-        insideSphere = lerp(insideSphere, boxSize, 0.1f);    
+        largerSphere = lerp(largerSphere, boxSize, 0.1f);  
+        
+        boxSize = 10 + (lv.getAmplitude() * 300);
+        smallerSphere = lerp(smallerSphere, boxSize, 0.05f);    
 
         lv.pushMatrix();
 
@@ -56,7 +60,19 @@ public class Sphere extends PApplet
         lv.rotateX(angle);
         lv.rotateZ(angle);
         lv.strokeWeight(1);
-        lv.sphere(insideSphere);
+        lv.sphere(largerSphere);
+
+        lv.translate(0, 0, 0); //places sphere in the middle
+        lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 200, 0)
+            , 255
+            , 255
+        );
+        lv.rotateY(angle);
+        lv.rotateX(angle);
+        lv.rotateZ(angle);
+        //lv.strokeWeight(1);
+        
+        lv.sphere(smallerSphere);
 
         lv.popMatrix();
 
