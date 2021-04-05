@@ -98,6 +98,11 @@ A pyramid appears when key 4 is pressed..........
 Key 1: Sphere in a sphere
 ![Sphere](images/sphere.png)
 
+
+Key 2: Circles
+![Circles](images/circles.png)
+
+
 Key 3: Cube and Waveform
 ![Key 3: Cube and waveform](images/cube.png)
 
