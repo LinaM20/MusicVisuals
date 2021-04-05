@@ -4,18 +4,27 @@ Name: Lina Mir
 
 Student Number: C19366191
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
-
 # Description of the assignment
+This assignment required me to create "something beautiful to enjoy while listening to music." 
+
+I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
+The song I used were a few different songs esspecially when I was testing the different wavelengths. I couldn't decide what song I wanted to use to I put in 4 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it reaches.
+
+
+
+
 
 # Instructions
+- To start the music, press the space key. This starts the music off and the visuals begin reacting. 
+- Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
+- If you press key 1, you should see a sphere.
+- Press key 2 to 
+- Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
 
 # How it works
+I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch.
+
+The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
 
 # What I am most proud of in the assignment
 
