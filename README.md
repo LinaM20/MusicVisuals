@@ -7,26 +7,40 @@ Student Number: C19366191
 # Description of the assignment
 This assignment required me to create "something beautiful to enjoy while listening to music." 
 
-I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
-The song I used were a few different songs esspecially when I was testing the different wavelengths. I couldn't decide what song I wanted to use to I put in 4 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it reaches.
+I created a visual art piece that responds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
+The songs I used were a few different songs esspecially when I was testing the different wavelengths. 
+I couldn't decide what song I wanted to use to I put in 3 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it reaches.
+The YouTube video plays the files Dharma.mp3 and FeelSoClose.mp3.
 
-
+I wanted to create visuals that responded to the music. The music to me didn't have to be directly influenced by the songs because I used 3 different ones, but rather I wanted it to just respond to the song and enjoy the way the shapes and waveform change size and colour.
 
 
 
 # Instructions
 - To start the music, press the space key. This starts the music off and the visuals begin reacting. 
-- Next press either 1, 2 or 3 to see different visuals, colours and shapes respond to the music.
+- To pause the music, press the space key.
+- Next press either 1, 2 or 3 to see different visuals.
 - If you press key 1, you should see a sphere.
-- Press key 2 to 
-- Pressing key 3 will produce a cube with a waveform in the middle. The waveform reacts to the music and different parts of the waveform move.
+- Press key 2 to see
+- Pressing key 3 will produce a cube with a waveform in the centre.
 
 # How it works
-I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch.
+I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
 
-The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
+Pressing key 1 will produce a sphere and another sphere inside it. They both react to the music. One sphere is larger than the other and changes size much more than the inside sphere as it is larger. The inner sphere colour is more blue/purple and this was to style it differently to the larger sphere so that it can be seen more clearly. Both the larger sphere and the inner sphere change colour depending on the amplitude the music reaches.
+
+Key 2 is pressed and  .......
+
+When key 3 is pressed, a cube and a waveform appear. The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
+
 
 # What I am most proud of in the assignment
+
+# Images
+
+![Key 3: Cube and waveform](images/cube.png)
+
+
 
 # Markdown Tutorial
 
