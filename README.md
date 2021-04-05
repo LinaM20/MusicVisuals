@@ -28,6 +28,28 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 # How it works
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
 
+The main file that calls all the other files is called LinasVisuals.java. The way it works is like this:
+Variables are created for the files so they can be easily accessed.
+'''Java
+public class LinasVisuals extends Visual
+{
+    Wave wave;
+    Sphere sphere;
+    Pryamid pyramid;
+    Cube cube;
+    Circle circle;
+....
+}
+'''
+
+Next, 
+'''Java
+public void setup()
+{ 
+
+'''
+
+
 Pressing key 1 will produce a sphere and another sphere inside it. They both react to the music. One sphere is larger than the other and changes size much more than the inside sphere as it is larger. The inner sphere colour is more blue/purple and this was to style it differently to the larger sphere so that it can be seen more clearly. Both the larger sphere and the inner sphere change colour depending on the amplitude the music reaches.
 
 Key 2 is pressed and many circles will appear. they decrease is size and this effect forms a vortex. They circles all change depending on the amplitude and increase in size too. The circles start of being red but as the music picks up, the colour of the circles change. 
