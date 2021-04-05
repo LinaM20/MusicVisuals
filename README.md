@@ -42,14 +42,9 @@ Key 3: Cube and Waveform
 
 
 
-# Markdown Tutorial
+
 
 This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
 
 This is a numbered list
 
@@ -89,13 +84,8 @@ public void render()
 }
 ```
 
-This is an image using a relative URL:
 
-![An image](images/p8.png)
 
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
 
 This is a youtube video:
 
