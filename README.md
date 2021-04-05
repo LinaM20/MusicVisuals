@@ -20,18 +20,21 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 - To start the music, press the space key. This starts the music off and the visuals begin reacting. 
 - To pause the music, press the space key.
 - Next press either 1, 2 or 3 to see different visuals.
-- If you press key 1, you should see a sphere.
-- Press key 2 to see
+- If key 1 is pressed, there should be a sphere.
+- Press key 2 to see many circles forming a vortex.
 - Pressing key 3 will produce a cube with a waveform in the centre.
+- Key 4 shows a pyramid.
 
 # How it works
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
 
 Pressing key 1 will produce a sphere and another sphere inside it. They both react to the music. One sphere is larger than the other and changes size much more than the inside sphere as it is larger. The inner sphere colour is more blue/purple and this was to style it differently to the larger sphere so that it can be seen more clearly. Both the larger sphere and the inner sphere change colour depending on the amplitude the music reaches.
 
-Key 2 is pressed and  .......
+Key 2 is pressed and many circles will appear. they decrease is size and this effect forms a vortex. They circles all change depending on the amplitude and increase in size too. The circles start of being red but as the music picks up, the colour of the circles change. 
 
 When key 3 is pressed, a cube and a waveform appear. The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
+
+A pyramid appears when key 4 is pressed..........
 
 
 # What I am most proud of in the assignment
@@ -40,7 +43,10 @@ When key 3 is pressed, a cube and a waveform appear. The cube moves according to
 Key 3: Cube and Waveform
 ![Key 3: Cube and waveform](images/cube.png)
 
+# YouTube Video
+This is the link to the video:
 
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
 
 
@@ -87,9 +93,9 @@ public void render()
 
 
 
-This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+
+
 
 This is a table:
 
