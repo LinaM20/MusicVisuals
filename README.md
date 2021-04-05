@@ -8,7 +8,8 @@ Student Number: C19366191
 This assignment required me to create "something beautiful to enjoy while listening to music." 
 
 I created a visual art peice that repsonds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
-The song I used were a few different songs esspecially to test the different wavelengths.
+The song I used were a few different songs esspecially when I was testing the different wavelengths. I couldn't decide what song I wanted to use to I put in 4 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it reaches.
+
 
 
 
