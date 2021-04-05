@@ -19,11 +19,11 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 # Instructions
 - To start the music, press the space key. This starts the music off and the visuals begin reacting. 
 - To pause the music, press the space key.
-- Next press either 1, 2 or 3 to see different visuals.
+- Next press either 1, 2, 3 or 4 to see different visuals.
 - If key 1 is pressed, there should be a sphere.
 - Press key 2 to see many circles forming a vortex.
 - Pressing key 3 will produce a cube with a waveform in the centre.
-- Key 4 shows a pyramid.
+- Key 4 shows a pyramid...
 
 # How it works
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
@@ -112,10 +112,8 @@ This is a numbered list
 1. Item
 1. Item
 
-This is a [hyperlink](http://bryanduggan.org)
 
-# Headings
-## Headings
+
 #### Headings
 ##### Headings
 
