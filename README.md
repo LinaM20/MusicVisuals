@@ -38,7 +38,8 @@ public class LinasVisuals extends Visual
 	Pryamid pyramid;
 	Cube cube;
 	Circle circle;
-....
+	
+	...
 }
 ```
 
@@ -46,7 +47,7 @@ Next, in the setup method, the files are called:
 ```Java
 public void setup()
 { 
-	.....
+	...
 	
 	wave = new Wave(this);
         sphere = new Sphere(this);
@@ -65,25 +66,18 @@ public void draw()
 	
  	if (key == '1')
         {
-            sphere.render();
-            
-     
+            sphere.render();    
         }
         if (key == '2')
-        {
-            
+        {            
             //pyramid.render();
-            circle.render();
-            
-           
-                
+            circle.render();                     
         }
         if (key == '3')
         {
             cube.render();
             wave.render();
         }
-	
 }
 
 ```
