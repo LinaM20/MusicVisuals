@@ -95,8 +95,13 @@ A pyramid appears when key 4 is pressed..........
 # What I am most proud of in the assignment
 
 # Images
+Key 1: Sphere in a sphere
+![Sphere](images/sphere.png)
+
 Key 3: Cube and Waveform
 ![Key 3: Cube and waveform](images/cube.png)
+
+
 
 # YouTube Video
 This is the link to the video:
