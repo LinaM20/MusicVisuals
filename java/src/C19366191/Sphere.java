@@ -12,6 +12,7 @@ public class Sphere extends PApplet
     float angle = 0;
     float largerSphere = 0;
     float smallerSphere = 0;
+    float tinySphere = 0;
     float boxSize;
 
     float theta = 0;
@@ -51,7 +52,10 @@ public class Sphere extends PApplet
         largerSphere = lerp(largerSphere, boxSize, 0.1f);  
         
         boxSize = 10 + (lv.getAmplitude() * 300);
-        smallerSphere = lerp(smallerSphere, boxSize, 0.05f);    
+        smallerSphere = lerp(smallerSphere, boxSize, 0.025f); 
+        
+        boxSize = 10 + (lv.getAmplitude() * 100);
+        tinySphere = lerp(tinySphere, boxSize, 0.025f);    
 
         lv.pushMatrix();
 
@@ -63,6 +67,8 @@ public class Sphere extends PApplet
         lv.sphere(largerSphere);
 
         lv.translate(0, 0, 0); //places sphere in the middle
+
+        //changes the colour of the second sphere
         lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 200, 0)
             , 255
             , 255
@@ -70,9 +76,19 @@ public class Sphere extends PApplet
         lv.rotateY(angle);
         lv.rotateX(angle);
         lv.rotateZ(angle);
-        //lv.strokeWeight(1);
+       
         
         lv.sphere(smallerSphere);
+
+
+        lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 1000, 150)
+            , 255
+            , 255
+        );
+        lv.rotateY(angle);
+        lv.rotateX(angle);
+        lv.rotateZ(angle);
+        lv.sphere(tinySphere);
 
         lv.popMatrix();
 

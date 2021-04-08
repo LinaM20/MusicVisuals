@@ -16,11 +16,11 @@ public class Wave
     public void render()
     {
         lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
-        lv.translate(-75, 0, -100);
+        lv.translate(-87, 0, -100);
 
 
         lv.colorMode(PApplet.HSB);
-        for(int i = 0 ; i < 200; i ++)
+        for(int i = 0 ; i < lv.getAudioBuffer().size(); i ++)
         {
             lv.stroke(
                 PApplet.map(i, 0, 200, 0, 255)

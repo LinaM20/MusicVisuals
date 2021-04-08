@@ -9,7 +9,6 @@ public class LinasVisuals extends Visual
 {
     Wave wave;
     Sphere sphere;
-    Pryamid pyramid;
     Cube cube;
     Circle circle;
 
@@ -30,7 +29,6 @@ public class LinasVisuals extends Visual
 
         wave = new Wave(this);
         sphere = new Sphere(this);
-        pyramid = new Pryamid(this);
         cube = new Cube(this);
         circle = new Circle(this);
 
@@ -78,14 +76,15 @@ public class LinasVisuals extends Visual
         {
             sphere.render();
             
+            
      
         }
         if (key == '2')
         {
             
-            //pyramid.render();
-            circle.render();
             
+            circle.render();
+                     
            
                 
         }
@@ -93,7 +92,10 @@ public class LinasVisuals extends Visual
         {
             cube.render();
             wave.render();
+            
         }
+        
+
         
   
 

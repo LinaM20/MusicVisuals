@@ -27,17 +27,14 @@ public class Circle extends PApplet{
         lv.calculateAverageAmplitude();
        
         float size = 10 + (lv.getSmoothedAmplitude() * intensity);
-        smooth_size = lerp(smooth_size, size, 0.1f);
+        smooth_size = lerp(smooth_size, size, 0.51f);
         
         for(int i = 0 ; i < lv.getAudioBuffer().size() ; i ++)
         {
-            // lv.stroke(PApplet.map(i, 0, lv.getAudioBuffer().size(), 0, 255)
-            //     , 255
-            //     , 255
-            // );
+            
             lv.ellipse(i , i, smooth_size, smooth_size);
             lv.translate(-1 , 0, -25);
-            lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, 0, 255-i) //reduces the colour of the inner circles
+            lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, i*10, 255-i) //reduces the colour of the inner circles
                 , 255
                 , 255
                 );
