@@ -90,9 +90,16 @@ When key 3 is pressed, a cube and a waveform appear. The cube moves according to
 
 
 # What I am most proud of in the assignment
-What I love about the assignment are the spheres. I love how the spheres look and react to the music and the best part about them is when the music brings us to the inside of the sphere. It took some time to code out the spheres and make 3 spheres, one smaller than the other. 
+What I love about the assignment are the spheres. I love how the spheres look and react to the music and the best part about them is when the music brings us to the inside of the sphere. It took some time to code out the spheres and make 3 spheres, one smaller than the other. The first sphere had to react more than the other spheres and to do that I had to mess around with the lerp code, which is the code below.
+```Java
+boxSize = 10 + (lv.getAmplitude() * 500);
+largerSphere = lerp(largerSphere, boxSize, 0.1f); 
+```
+Making the number mutliplied by the getAmplitude() bigger caused the sphere to react more. 
 
 The circles took a while to do, so that was something I am proud of. I finally drew a circle but I didn't know what I wanted to do with it, so I decided to create a loop to continuous create circle, which caused a vortex look that I really liked. I messed around with the colours to make it look nice and finally decided on a multicoloured vortex.
+
+I am also very proud of the cubes and waveform. The waveform gave me some issues when I was trying to set it up, I needed it to stretch across the whole screen, but at the beginning it was not, so I needed to figure out how to stretch it. I had to use getAudioBuffer().size() in a for loop to display the waveform across the entire screen. 
 
 # Images
 Key 1: Sphere in a sphere
