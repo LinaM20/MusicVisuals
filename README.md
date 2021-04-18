@@ -17,7 +17,7 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 
 
 # Instructions
-- To start the music, press the space key. This starts the music off and the visuals begin reacting. 
+- First, press the space key to start the music.
 - To pause the music, press the space key.
 - Next press either 1, 2 or 3 to see different visuals.
 - If key 1 is pressed, there should be spheres.
@@ -127,38 +127,9 @@ Key 3: Cube and Waveform
 
 # YouTube Video
 This is the link to the video:
+Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are completely fine.
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-
-
-This is *emphasis*
-
-This is a numbered list
-
-1. Item
-1. Item
+[![YouTube](https://youtu.be/LbYhHfvSO7Q)
 
 
-
-#### Headings
-##### Headings
-
-
-
-
-
-
-
-
-
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
