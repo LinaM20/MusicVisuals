@@ -29,7 +29,7 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
 
 The main file that calls all the other files is called LinasVisuals.java. The way it works is like this:
-Variables are created for the files so they can be easily accessed.
+The other classes use inheritance to call on the super/parent class. To do this the word extends is used.
 ```Java
 public class LinasVisuals extends Visual
 {
@@ -42,7 +42,17 @@ public class LinasVisuals extends Visual
 }
 ```
 
-Next, in the setup method, the files are called:
+It also uses a constructor and each class has the same constructor. 
+This is an example of the constructor in Circle.java. This is how the constructor looks like for all the class files.
+```Java
+public Circle(LinasVisuals lv)
+{
+        this.lv = lv;
+     
+}
+``` 
+
+Next, in the setup method, objects are created in LinasVisuals.java.
 ```Java
 public void setup()
 { 
