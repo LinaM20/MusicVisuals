@@ -17,7 +17,7 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 
 
 # Instructions
-- To start the music, press the space key. This starts the music off and the visuals begin reacting. 
+- First, press the space key to start the music.
 - To pause the music, press the space key.
 - Next press either 1, 2 or 3 to see different visuals.
 - If key 1 is pressed, there should be spheres.
@@ -29,7 +29,7 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 I created a few branches to work on different things and then when I was satisfied I merged the work from the branches onto the master branch. This really helped me try out different thing before I decided what I wanted and commited it to the master. I created branches often because it was hard for me to decide what to do with so many options!
 
 The main file that calls all the other files is called LinasVisuals.java. The way it works is like this:
-Variables are created for the files so they can be easily accessed.
+The other classes use inheritance to call on the super/parent class. To do this the word extends is used.
 ```Java
 public class LinasVisuals extends Visual
 {
@@ -42,7 +42,17 @@ public class LinasVisuals extends Visual
 }
 ```
 
-Next, in the setup method, the files are called:
+It also uses a constructor and each class has the same constructor. 
+This is an example of the constructor in Circle.java. This is how the constructor looks like for all the class files.
+```Java
+public Circle(LinasVisuals lv)
+{
+        this.lv = lv;
+     
+}
+``` 
+
+Next, in the setup method, objects are created in LinasVisuals.java.
 ```Java
 public void setup()
 { 
@@ -117,38 +127,9 @@ Key 3: Cube and Waveform
 
 # YouTube Video
 This is the link to the video:
+Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are completely fine.
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-
-
-This is *emphasis*
-
-This is a numbered list
-
-1. Item
-1. Item
+[YouTube](https://youtu.be/LbYhHfvSO7Q)
 
 
-
-#### Headings
-##### Headings
-
-
-
-
-
-
-
-
-
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
