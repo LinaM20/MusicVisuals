@@ -24,9 +24,7 @@ public class LinasVisuals extends Visual
         loadAudio("Punjabi.mp3");
         //loadAudio("Dharma.mp3");
         //loadAudio("FeelSoClose.mp3");
-       
-
-
+     
         wave = new Wave(this);
         sphere = new Sphere(this);
         cube = new Cube(this);
@@ -48,11 +46,8 @@ public class LinasVisuals extends Visual
             }           
             
         }
-        
-     
-    }
-
     
+    }
 
     public void draw()
     {
@@ -71,30 +66,21 @@ public class LinasVisuals extends Visual
 
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude(); 
-        
-        if (key == '1')
-        {
-            sphere.render();
-            
-            
-     
+      
+        switch (key) {
+            case '1':
+                sphere.render();
+                break;
+
+            case '2':
+                circle.render();
+                break;
+
+            case '3':
+                cube.render();
+                wave.render();
+                break;
         }
-        if (key == '2')
-        {
-            
-            
-            circle.render();
-                     
-           
-                
-        }
-        if (key == '3')
-        {
-            cube.render();
-            wave.render();
-            
-        }
-        
 
         
   

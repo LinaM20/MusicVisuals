@@ -21,7 +21,7 @@ public class Circle extends PApplet{
     {
         lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         lv.noFill();
-        lv.colorMode(HSB);
+        lv.colorMode(PApplet.HSB);
         lv.strokeWeight(2); 
     
         lv.calculateAverageAmplitude();
@@ -34,15 +34,14 @@ public class Circle extends PApplet{
             
             lv.ellipse(i , i, smooth_size, smooth_size);
             lv.translate(-1 , 0, -25);
-            lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, i*10, 255-i) //reduces the colour of the inner circles
+            lv.stroke(PApplet.map(lv.getSmoothedAmplitude(), 0, 1, i*5, 255) //reduces the colour of the inner circles
                 , 255
                 , 255
-                );
-                
-           
-        }     
-                  
-           
+            );
+         
+        }   
+        
+       
     }
     
 }

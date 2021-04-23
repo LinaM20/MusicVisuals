@@ -8,21 +8,17 @@ public class Cube extends PApplet {
     LinasVisuals lv;
 
     float angle = 0.5f;
-    float boxSize = 300;
+    float boxPlace = 300;
     float lerpVariable = 0;
     float size;
     
-
-
     public Cube (LinasVisuals lv)
     {
         this.lv = lv;
     }
 
-    
-
+ 
     public void render() {
-        lv.lights();
         lv.colorMode(PApplet.HSB);
         lv.calculateAverageAmplitude();
 
@@ -31,7 +27,6 @@ public class Cube extends PApplet {
             , 255
         );
 
-        lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         lv.translate(0, 0, -250);
         lv.strokeWeight(2);
         
@@ -39,14 +34,11 @@ public class Cube extends PApplet {
         lv.rotateY(angle);
         lv.rotateZ(angle);
 
-        
         lv.noFill();
-        lv.box(10 + lv.getSmoothedAmplitude() * boxSize);
-        
-
+        lv.box(10 + lv.getSmoothedAmplitude() * boxPlace);
+       
         angle += 0.0255f;
-        
-
+     
     }
     
 }
