@@ -33,13 +33,9 @@ public class Pyramid extends PApplet {
         lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         lv.translate(0, 0, -250);
 
-        p = 10 + (lv.getAmplitude() * 150);
-        t = lerp(t, p, 0.1f); 
-
-        target = 5 + (lv.getAmplitude() * 300);
-        smallerSphere = lerp(smallerSphere, target, 0.05f); 
-
-       
+        p = 15 + (lv.getAmplitude() * 300);
+        t = lerp(t, p, 0.05f); 
+      
                 
      
         lv.rotateX(theta);
