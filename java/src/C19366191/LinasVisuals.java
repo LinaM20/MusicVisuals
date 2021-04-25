@@ -11,6 +11,7 @@ public class LinasVisuals extends Visual
     Sphere sphere;
     Cube cube;
     Circle circle;
+    Pyramid pyramid;
 
     public void settings()
     {
@@ -21,14 +22,15 @@ public class LinasVisuals extends Visual
     public void setup()
     {
         startMinim();
-        //loadAudio("Punjabi.mp3");
+        loadAudio("Punjabi.mp3");
         //loadAudio("Dharma.mp3");
-        loadAudio("FeelSoClose.mp3");
+        //loadAudio("FeelSoClose.mp3");
      
         wave = new Wave(this);
         sphere = new Sphere(this);
         cube = new Cube(this);
         circle = new Circle(this);
+        pyramid = new Pyramid(this);
 
     }
 
@@ -79,6 +81,9 @@ public class LinasVisuals extends Visual
             case '3':
                 cube.render();
                 wave.render();
+                break;
+            case '4':
+                pyramid.render();
                 break;
         }
 
