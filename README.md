@@ -9,10 +9,10 @@ This assignment required me to create "something beautiful to enjoy while listen
 
 I created a visual art piece that responds to the amplitude of the music by creating a music visualiser using processing in java. My assignment uses both 2D and 3D shapes.
 The songs I used were a few different songs esspecially when I was testing the different wavelengths. 
-I couldn't decide what song I wanted to use to I put in 3 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it reaches.
+I couldn't decide what song I wanted to use to I put in 3 different songs but the YouTube video plays 2 of them to demonstrate the potential amplitude it can reach.
 The YouTube video plays the files Dharma.mp3 and FeelSoClose.mp3.
 
-I wanted to create visuals that responded to the music. The music to me didn't have to be directly influenced by the songs because I used 3 different ones, but rather I wanted it to just respond to the song and enjoy the way the shapes and waveform change size and colour.
+I wanted to create visuals that responded to the music. The music to me didn't have to be directly influenced by the songs because I created 4 different ones, but rather I wanted it to just respond to the song and to enjoy the way the shapes and waveform change size and colour.
 
 
 
