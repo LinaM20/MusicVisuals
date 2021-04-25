@@ -129,7 +129,7 @@ Key 3: Cube and Waveform
 This is the link to the video:
 Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are completely fine.
 
-[YouTube](https://youtu.be/LbYhHfvSO7Q)
+[YouTube](https://youtu.be/TEK4t1hrTNc)
 
 
 
