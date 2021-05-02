@@ -23,7 +23,7 @@ I wanted to create visuals that responded to the music. The music to me didn't h
 - If key 1 is pressed, there should be spheres.
 - Press key 2 to see many circles forming a vortex.
 - Pressing key 3 will produce a cube with a waveform in the centre.
-- When key 4 is pressed, a rotating pyramid should appear
+- When key 4 is pressed, a rotating pyramid should appear with a surprise.
 
 
 # How it works
@@ -39,6 +39,7 @@ public class LinasVisuals extends Visual
 	Cube cube;
 	Circle circle;
 	Pyramid pyramid;
+	Rain rainfall;
 	
 	...
 }
@@ -65,6 +66,7 @@ public void setup()
         cube = new Cube(this);
         circle = new Circle(this);
 	pyramid = new Pyramid(this);
+	rainfall = new Rain(this);
 }
 
 ```
@@ -89,6 +91,7 @@ public void draw()
                 break;
             case '4':
                 pyramid.render();
+		rainfall.render();
                 break;
         }
 	
@@ -103,7 +106,7 @@ Key 2 is pressed and many circles will appear. they decrease is size and this ef
 
 When key 3 is pressed, a cube and a waveform appear. The cube moves according to the music as well as the wavelength. The wavelength reaches the length of screen size and moves according to the music and the wavelength is rainbow coloured, as according to HSB.
 
-The 4th key is pressed and a pyramid appears. The pyramid rotates around and the colour of it changes depending on the music. It also gets bigger and smaller depending on the music. 
+The 4th key is pressed and a pyramid appears. The pyramid rotates around and the colour of it changes depending on the music. It also gets bigger and smaller depending on the music. It was filled in colour to darken the look of the pyramid so it would standout from the lines. I found that the pyramid on its own looked very simple. So I added some bursts of lines. They kind of look like fireworks.
 
 
 # What I am most proud of in the assignment
@@ -118,7 +121,9 @@ Making the number mutliplied by the getAmplitude() bigger caused the sphere to r
 
 The circles took a while to do, which is also something I am proud of. I finally drew a circle but I didn't know what I wanted to do with it, so I decided to create a loop to continuous create circles, which caused a vortex look that I really liked. I messed around with the colours to make it look nice and finally decided on a multicoloured vortex.
 
-I am also very proud of the cubes and waveform. The waveform gave me some issues when I was trying to set it up, I needed it to stretch across the whole screen, but when I first added it, it did not stretch across the screen, so I needed to figure out how to stretch it. I had to use getAudioBuffer().size() in a for loop to display the waveform across the entire screen. 
+I am also very proud of the cubes and waveform. The waveform gave me some issues when I was trying to set it up, I needed it to stretch across the whole screen, but when I first added it, it did not stretch across the screen, so I needed to figure out how to stretch it. I had to use getAudioBuffer().size() in a for loop to display the waveform across the entire screen.
+
+I am also really proud of the 'fireworks'. To create them I had to mess around with the code a bit. Originally it was going to create random circles, but I changed the code from ellipse to line and decided that it had to be lines!
 
 # Images
 Key 1: Sphere in a sphere
@@ -141,7 +146,7 @@ Key 4: Rotating Pyramid
 This is the link to the video:
 Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are fine.
 
-[YouTube](https://youtu.be/TEK4t1hrTNc)
+[YouTube](https://youtu.be/nOEBIi9xAjg)
 
 
 
