@@ -141,7 +141,7 @@ Key 4: Rotating Pyramid
 This is the link to the video:
 Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are fine.
 
-[YouTube](https://youtu.be/TEK4t1hrTNc)
+[YouTube](https://youtu.be/nOEBIi9xAjg)
 
 
 
