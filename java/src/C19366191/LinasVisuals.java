@@ -13,6 +13,7 @@ public class LinasVisuals extends Visual
     Circle circle;
     Pyramid pyramid;
     Rain rainfall;
+ 
 
     public void settings()
     {
@@ -89,6 +90,7 @@ public class LinasVisuals extends Visual
                 pyramid.render();
                 rainfall.render();
                 break;
+           
         }
 
         

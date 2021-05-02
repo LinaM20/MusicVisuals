@@ -16,12 +16,11 @@ public class Rain extends PApplet{
 
 
     public void render() {
-        //lv.camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
+
 
         lv.colorMode(PApplet.HSB);
         lv.calculateAverageAmplitude();
-        // float size = 10 + (lv.getSmoothedAmplitude() * intensity);
-        // smooth_size = lerp(smooth_size, size, 0.51f);
+     
 
         for (int i = 0; i < 50; i++)
         {
@@ -33,10 +32,6 @@ public class Rain extends PApplet{
             , 255
             );
             lv.noFill();
-            //lv.translate(100, 100);
-
-            float size = 10 + (lv.getSmoothedAmplitude() * intensity);
-        smooth_size = lerp(smooth_size, size, 0.50f);
         
 
             //bottom edge
@@ -53,7 +48,7 @@ public class Rain extends PApplet{
 
             lv.camera(100, 100, 0, 0, 0, 1, 1, 1, 1);
             lv.translate(0, 0, 0);
-            lv.line(x, y, smooth_size*10, smooth_size*10);
+            lv.line(x, y, r*5, r*5);
 
           
         }
