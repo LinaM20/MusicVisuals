@@ -25,8 +25,8 @@ public class LinasVisuals extends Visual
     {
         startMinim();
         //loadAudio("Punjabi.mp3");
-        loadAudio("Dharma.mp3");
-        //loadAudio("FeelSoClose.mp3");
+        //loadAudio("Dharma.mp3");
+        loadAudio("FeelSoClose.mp3");
      
         wave = new Wave(this);
         sphere = new Sphere(this);
