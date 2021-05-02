@@ -144,7 +144,7 @@ Key 4: Rotating Pyramid
 
 # YouTube Video
 This is the link to the video:
-Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are fine.
+Unfortunately, the resolution of the spheres are a bit low due to the video quality but the other visuals are fine
 
 [YouTube](https://youtu.be/nOEBIi9xAjg)
 
