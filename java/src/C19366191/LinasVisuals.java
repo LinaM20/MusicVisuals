@@ -12,6 +12,7 @@ public class LinasVisuals extends Visual
     Cube cube;
     Circle circle;
     Pyramid pyramid;
+    Rain rainfall;
 
     public void settings()
     {
@@ -23,14 +24,16 @@ public class LinasVisuals extends Visual
     {
         startMinim();
         //loadAudio("Punjabi.mp3");
-        //loadAudio("Dharma.mp3");
-        loadAudio("FeelSoClose.mp3");
+        loadAudio("Dharma.mp3");
+        //loadAudio("FeelSoClose.mp3");
      
         wave = new Wave(this);
         sphere = new Sphere(this);
         cube = new Cube(this);
         circle = new Circle(this);
         pyramid = new Pyramid(this);
+        rainfall = new Rain(this);
+
 
     }
 
@@ -84,6 +87,7 @@ public class LinasVisuals extends Visual
                 break;
             case '4':
                 pyramid.render();
+                rainfall.render();
                 break;
         }
 
